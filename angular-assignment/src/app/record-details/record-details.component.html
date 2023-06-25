@@ -1,0 +1,42 @@
+<div class="container">
+    <br><br><br>
+    <div class="space-btn">
+    <div class="search-bar">
+        <input [(ngModel)]="searchEmail" name="searchEmail" placeholder="Search By Email Address" required (input)="searchRecord()">
+        <span class="search-icon"></span>
+      </div>
+    <div class="create-bar">
+      <label>Name:</label>
+      <input [(ngModel)]="newRecord.name" name="name" required>
+      <label>Email:</label>
+      <input [(ngModel)]="newRecord.email" name="email" required>
+      <label>Phone:</label>
+      <input [(ngModel)]="newRecord.phone" name="phone" required>
+      <label>Address:</label>
+      <input [(ngModel)]="newRecord.address" name="address" required>
+      <button  (click)="createRecord()">Create</button>
+    </div>
+</div>
+<br><br><br>
+    <table class="record-table">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let record of filteredRecords">
+        <td>{{ record.name }}</td>
+        <td>{{ record.email }}</td>
+        <td>{{ record.phone }}</td>
+        <td>
+          <button (click)="deleteRecord(record.id)">Delete</button>
+        </td>
+        <td>
+          <button (click)="viewDetails(record.id)">Details</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  

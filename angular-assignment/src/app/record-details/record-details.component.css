@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button.create-button {
+    width: 200px; 
+    height: 40px; 
+    border-radius: 20px; 
+    color: #0e0e0e; 
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .record-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .record-table th,
+  .record-table td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;  
+  }
+
+  .record-table th{
+    background-color:rgb(203, 202, 202);
+  }
+  .search-bar {
+    position: relative;
+    display: flex;
+  }
+  
+  input[name="searchEmail"] {
+    padding-right: 30px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/images/search-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 2px;
+    border-radius: 20px;
+    margin-right: 25vh;
+  }
+  
+  input[name="searchEmail"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .search-bar::before,
+  .search-bar::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+
+  .search-bar::before {
+    margin-right: 2px;
+  }
+  
+  .search-bar::after {
+    margin-left: 2%;
+  }
+
+  .space-btn{
+    display:flex;
+  }
+
+  .create-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .create-bar label {
+    margin-right: 10px;
+  }
+  
+  .create-bar input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .create-bar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(203, 202, 202);
+    border: #0e0e0e;
+    color: #0a0a0a;
+    margin-left: 10px;
+  }
+
+  
